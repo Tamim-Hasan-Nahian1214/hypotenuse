@@ -1,14 +1,14 @@
 #include <iostream> 
 #include <cmath>
 int main() {
-    int a;
+    int hypotenuseA;
     std::cout << "Enter the size of a: ";
-    std::cin >> a; 
-    int b;
+    std::cin >> hypotenuseA;
+    int hypotenuseB;
     std::cout << "Enter the size of b: ";
-    std::cin >> b; 
+    std::cin >> hypotenuseB;
     double c;
-    c = std::sqrt(std::pow(a, 2) + std::pow(b, 2));
+    c = std::sqrt(std::pow(hypotenuseA, 2) + std::pow(hypotenuseA, 2));
     std::cout << c << std::endl;
     return 0;
 }
