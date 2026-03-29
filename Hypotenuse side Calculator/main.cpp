@@ -8,7 +8,7 @@ int main() {
     std::cout << "Enter the size of b: ";
     std::cin >> hypotenuseB;
     double c;
-    c = std::sqrt(std::pow(hypotenuseA, 2) + std::pow(hypotenuseA, 2));
+    c = std::sqrt(std::pow(hypotenuseA, 2) + std::pow(hypotenuseB, 2));
     std::cout << c << std::endl;
     return 0;
 }
