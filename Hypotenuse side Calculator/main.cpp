@@ -1,6 +1,17 @@
 #include <iostream> 
 #include <cmath>
 
+double addition() {
+    int additionA;
+    std::cout << "Enter Number 1: ";
+    std::cin >> additionA;
+    int additionB;
+    std::cout << "Enter Number 2: ";
+    std::cin >> additionB;
+    int additionResult = additionA + additionB;
+    std::cout << "The Addition is: " << additionResult << std::endl;
+}
+
 double hypotenuse()
 {
     int hypotenuseA;
@@ -17,6 +28,7 @@ double hypotenuse()
 
     int main()
 {
-    double c = hypotenuse(); 
+    hypotenuse();
+    addition();
     return 0;
 }
