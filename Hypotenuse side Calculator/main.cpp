@@ -46,6 +46,10 @@ void division()
     std::cin >> divisionB;
     int divisionResult = divisionA / divisionB;
     std::cout << "The Division is: " << divisionResult << std::endl;
+    if (divisionB == 0)
+    {
+        std::cout << "You Can't Divide a Number with 0!" << std::endl;
+    }
 }
 
 void hypotenuse()
@@ -85,5 +89,5 @@ void hypotenuse()
     else {
         std::cout << "Wrong Input" << std::endl;
     }
-    return 0;
+        return 0;
 }
