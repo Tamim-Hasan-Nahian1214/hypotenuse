@@ -1,7 +1,7 @@
 #include <iostream> 
 #include <cmath>
 
-double addition() {
+void addition() {
     int additionA;
     std::cout << "Enter Number 1: ";
     std::cin >> additionA;
@@ -12,7 +12,7 @@ double addition() {
     std::cout << "The Addition is: " << additionResult << std::endl;
 }
 
-double subtraction()
+void subtraction()
 {
     int subtractionA;
     std::cout << "Enter Number 1: ";
@@ -24,7 +24,7 @@ double subtraction()
     std::cout << "The Subtraction is: " << subtractionResult << std::endl;
 }
 
-double multiplication()
+void multiplication()
 {
     int multiplicationA;
     std::cout << "Enter Number 1: ";
@@ -36,7 +36,7 @@ double multiplication()
     std::cout << "The Multiplication is: " << multiplicationResult << std::endl;
 }
 
-double division()
+void division()
 {
     int divisionA;
     std::cout << "Enter Number 1: ";
@@ -48,7 +48,7 @@ double division()
     std::cout << "The Division is: " << divisionResult << std::endl;
 }
 
-double hypotenuse()
+void hypotenuse()
 {
     int hypotenuseA;
     std::cout << "Enter the size of a: ";
@@ -59,15 +59,31 @@ double hypotenuse()
     double hypotenuseC;
     hypotenuseC = std::sqrt(std::pow(hypotenuseA, 2) + std::pow(hypotenuseB, 2));
     std::cout << "Hypotenuse: " << hypotenuseC << std::endl;
-    return hypotenuseC;
 }
 
     int main()
 {
-    hypotenuse();
-    addition();
-    subtraction();
-    multiplication();
-    division(); 
+    std::string input;
+    std::cout << "Enter The Operation (addition, subtraction, multiplication, division, hypotenuse): ";
+    std::cin >> input;
+    if (input == "addition") {
+        addition();
+    }
+    else if (input == "subtraction")
+    {
+        subtraction();
+    }
+    else if (input == "multiplication") {
+        multiplication();
+    }
+    else if (input == "division") {
+        division(); 
+    }
+    else if (input == "hypotenuse") {
+        hypotenuse();
+    }
+    else {
+        std::cout << "Wrong Input" << std::endl;
+    }
     return 0;
 }
